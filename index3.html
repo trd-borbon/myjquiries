@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>Testing Javascrip</title>
+ <script src="myphone.js"></script>
+</head>
+<body>
+<button type="button" onclick="myfunc()">show time</button>
+<p id="sh"></p>
+<img src="m1_3.png" id="pics" alt="dsjflsd" width="100px" height="100px"/>
+</body>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<script>
+	function myfunc(){
+		document.getElementById("sh").innerHTML= Date();
+	} 
+	$("img#pics").click(function(){
+		if($(this).attr("src") == "m1_3.png")
+	    {
+	    $(this).attr("src", "mwc5_1.png");
+	    }
+	    else
+	    {
+	     $(this).attr("src", "m1_3.png");
+	    }
+	});
+</script>
+</html>

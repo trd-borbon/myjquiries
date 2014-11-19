@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-dialog="true" id="pageone">
+  <div data-role="header">
+  <h1>Welcome To My Homepage one</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <p>Welcome!</p>
+  <a class="ui-btn" href="#pagetwo" data-transition="flip" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">page two</a><br>
+  <a href="#dialogpage" data-transition="flip" data-direction="reverse" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">go to dialog page</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="pagetwo">
+  <div data-role="header">
+  <h1>Welcome To My Homepage two</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <p>Welcome!</p>
+  <a href="#pageone" data-transition="flip" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">page one</a><br>
+  <a href="#dialogpage" data-transition="flip" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">go to dialog page</a>
+  </div>
+
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="dialogpage">
+  <div data-role="header">
+  <h1>Welcome To My Homepage dialog</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <h1>this page is the dialog page</h1>
+  <p>Welcome!dfdsfsdfsdf</p>
+  <a href="#pageone" data-transition="flip" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">page one</a><br>
+  <a href="#pagetwo" data-transition="flip" data-direction="inverse" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">page two</a>
+  </div>
+
+  <div data-role="footer" height="500px">
+  <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-grid ui-btn-icon-left ui-btn-icon-notext"></a>
+  <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-left ui-btn-icon-notext"></a>
+  <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-left ui-btn-icon-notext"></a>
+  <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-left ui-btn-icon-notext"></a>
+  </div>
+</div> 
+</body>
+</html>
